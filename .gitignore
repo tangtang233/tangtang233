@@ -332,3 +332,4 @@ ASALocalRun/
 # my hexo
 db.json
 public/
+.deploy_git/
