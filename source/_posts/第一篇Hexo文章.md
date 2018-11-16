@@ -1,6 +1,7 @@
 ---
 title: 第一篇Hexo文章
 date: 2018-10-29 16:01:31
+categories: 随笔
 tags: 
 - 个人随笔
 ---

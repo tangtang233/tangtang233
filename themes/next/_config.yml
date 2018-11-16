@@ -130,8 +130,9 @@ social:
   GitHub: https://github.com/tangtang233 || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   Google: https://plus.google.com/107121707595594725053 || google
+  Weibo: https://weibo.com/tangtang2333 || weibo
   #Twitter: https://twitter.com/yourname || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
+  FaceBook: https://www.facebook.com/tangtang233 || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
@@ -154,7 +155,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: http://jiantuku-image-tangtang233.oss-cn-hangzhou.aliyuncs.com/18-10-30/35952693.jpg
+avatar: http://jiantuku-image-tangtang233.oss-cn-hangzhou.aliyuncs.com/18-11-8/78893767.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -360,7 +361,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: true
 
