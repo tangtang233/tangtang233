@@ -21,7 +21,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://tangtang233.github.io
+url: https://blog.pwai.net.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
