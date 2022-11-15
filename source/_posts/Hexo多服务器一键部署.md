@@ -56,7 +56,8 @@ tags: 程序员笔记
     }
 
 
-    apply plugin: 'org.hidetake.ssh'```
+    apply plugin: 'org.hidetake.ssh'
+   ```
 
 2. 配置远程地址信息
 
@@ -86,14 +87,16 @@ tags: 程序员笔记
             //identity = file("${rootDir}/id_rsa")
         }
     }
-
+   ```
 
 3. Gradle任务编写
 
-    最后就是编写你的部署逻辑啦。这个会因为每个项目技术栈的不同，服务器的环境不同，可能会有各种细节上的出入，但逻辑还是可以参考的。当然，也可以Google一下跟自己累死的部署方案是什么逻辑。
-    一般部署逻辑无外乎：停止服务->备份上一版本->传输新部署包->重启服务，如果是tomcat下部署，那可能涉及解压等等其他操作，这些都可以通过shell命令去完成，这里就不赘述了。我这里得shell命令示例基于我自己的服务器情况，服务器环境是Windows，已经安装了Cygwin（让Windows平台下可以运行shell命令，支持ssh插件），项目是SpringBoot项目，Gradle构建，直接在开发机器上打成jar包，在服务器上直接使用java -jar xxxx.jar命令来启动。
+   最后就是编写你的部署逻辑啦。这个会因为每个项目技术栈的不同，服务器的环境不同，可能会有各种细节上的出入，但逻辑还是可以参考的。当然，也可以Google一下跟自己类似的部署方案是什么逻辑。
+   一般部署逻辑无外乎：停止服务->备份上一版本->传输新部署包->
+   重启服务，如果是tomcat下部署，那可能涉及解压等等其他操作，这些都可以通过shell命令去完成，这里就不赘述了。我这里的shell命令示例基于我自己的服务器情况，服务器环境是Windows，已经安装了Cygwin（让Windows平台下可以运行shell命令，支持ssh插件），项目是SpringBoot项目，Gradle构建，直接在开发机器上打成jar包，在服务器上直接使用java
+   -jar xxxx.jar命令来启动。
 
-```gradle
+    ```gradle
 
     // 定义一个获取当前时间字符串的辅助函数
     static def now() {
@@ -124,7 +127,8 @@ tags: 程序员笔记
                 }
             }
         }
-    }```
+    }
+   ```
 
 这样gradle中就多了两个自定义任务，名字分别为pkg和deploy的task任务，并且deploy依赖于pkg的成功。
 pkg任务其实就是执行了gradle自带的clean（清理）和bootJar（打jar包）任务，成功后执行deploy任务。

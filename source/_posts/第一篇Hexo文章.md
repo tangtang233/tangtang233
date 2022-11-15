@@ -10,4 +10,4 @@ tags:
 就写到这儿吧。
 
 附上一张Gakki图，测试一下Markdown的图片引用：
-![Gakki](https://pbs.twimg.com/profile_images/890717192014057473/AEVVjFOD_400x400.jpg "Gakki")
+![Gakki](https://jiantuku-image-tangtang233.oss-cn-hangzhou.aliyuncs.com/18-11-8/78893767.jpg "Gakki")
